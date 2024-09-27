@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img alt="logo" src="..\Assets\NavBar\Vkelloggs.png" class="logo">
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="recipes.html" class="nav-link">Recipes</a></li>
+                <li class="nav-item"><a href="abtUs.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <img alt="ayam" src="..\Assets\NavBar\ayam1.png" class="ayam">
+        </nav> 
+    </header>   
+    <div class="ctcUs_banner">
+        <p>HAVE ANY INQUIRIES?</p>
+        <p>CONTACT US!</p>
+    </div>
+    <form id="contact_form" action="">
+        <div class="ctc_form">
+            <div class="form_content">
+                <div class="form_input">
+                    <div class="form_group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="form_group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+                    <div class="form_group">
+                        <label for="email_address">Email Address</label>
+                        <input type="email" name="email_address" id="email_address">
+                    </div>
+                    <div class="form_group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number">
+                    </div>
+                <div class="form_group2 full_width">
+                    <label for="inquiry">What's your inquiry?</label>
+                    <textarea name="inquiry" id="inquiry"></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="form_btn" onclick="return validate()">Submit</button>
+                </div>
+                </div>
+                <div class="bee_container">
+                    <img alt="bee mascot" src="..\Assets\ContactUs\honeypops_bee.png" class="bee">
+                </div>
+            </div>
+        </div>
+    </form>
+    <p id = "output"> </p>
+    <footer id="footerbar">
+        <div class="footer_left">
+            <img alt="logo white" src="..\Assets\Footer\VKelloggs - white.png" class="logo_white">
+            <p>© 2024 Kellanova. All rights reserved.</p>
+        </div>
+        <div class="footer_mid">
+            <p class="footer_txt2">GET IN TOUCH</p>
+            <img alt="ig" src="..\Assets\Footer\ig logo.png" class="footer_img">
+            <img alt="fb" src="..\Assets\Footer\fb logo.png" class="footer_img">
+            <img alt="twt" src="..\Assets\Footer\x logo.png" class="footer_img">
+            <img alt="mail" src="..\Assets\Footer\email png.png" class="footer_img2">
+            <p>PRIVACY NOTICE  |  TERMS OF USE  |  SHOP NOW</p>
+        </div>
+        <div class="footer_right">
+            <p class="footer_txt2">SUBSCRIBE TO OUR NEWSLETTER</p>
+            <input type = "text" name="email" id="email" placeholder="Enter your email">
+            <button type="submit" id="btn">Submit</button>
+        </div>
+    </footer>
+</body>
+<script src="nav.js"></script>
+<script src="contact_script.js"></script>
+</html>
